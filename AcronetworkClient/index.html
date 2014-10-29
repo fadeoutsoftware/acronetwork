@@ -15,7 +15,7 @@
     <!--                                           -->
     <!-- Any title is fine                         -->
     <!--                                           -->
-    <title>Acronetwork </title>
+    <title>Acronetwork</title>
 
     <!-- Google Maps Scripts -->
     <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false"></script>
@@ -24,7 +24,8 @@
 
     <!-- Bootstrap core CSS -->
     <!--link href="css/bootstrap.css" rel="stylesheet"-->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">-->
 
     <!-- Add custom CSS here -->
     <link href="css/customfonts.css" rel="stylesheet">
@@ -51,16 +52,16 @@
 <!-- Side Menu -->
 <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
 <!--img id="menu-waiting" src="img/Waiting.GIF"  class = "toggle"/-->
-<div id="sidebar-wrapper">
+<div id="sidebar-wrapper" class="an_bg_menu">
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="#top">ACRONETWORK</a></li>
         <li><a href="#top">Home</a></li>
-        <li><a ng-click="m_oController.serviceIconClicked('/maps')">Dati</a></li>
-        <li><a ng-click="m_oController.serviceIconClicked('/stationstable')">Tabelle</a></li>
-        <li><a ng-click="m_oController.serviceIconClicked('/animations')">Satellite e Radar</a></li>
-        <li><a ng-click="m_oController.serviceIconClicked('/animations')">Modelli Meteo Marini</a></li>
-        <li><a ng-click="m_oController.serviceIconClicked('/credits')">Crediti</a></li>
+        <li><a href="#acronetwork">Acronetwork</a></li>
+        <li><a ng-click="m_oController.serviceIconClicked('/map')" style="cursor: pointer">Public</a></li>
+        <li><a href="#ucon">MYnetwork</a></li>
+        <li><a href="#ucon">Admin</a></li>
+        <li><a href="#ucon">Kumalé</a></li>
         <br>
         <li>
             <a ng-click="m_oController.reservedAreaClicked()">{{m_oController.ReservedAreaText}}</a>
@@ -113,103 +114,81 @@
 -->
 <!-- /Full Page Image Header Area -->
 
+<!-- Intro image -->
+<div id="top" class="header an_bg_intro_page">
+    <div class="an_box_start_intro">
+        <span class="an_title_homepage">ACRONETWORK</span><br /><br />
+        <a href="#acronetwork"><div class="btn btn-primary">START</div></a>
+    </div>
+</div>
+<!-- /Intro image -->
+
 <!-- Intro
 <div id="about" class="intro">-->
-<div id="top" class="header">
-    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
-        <div class="row loghi">
-            <table>
-                <tr>
-                    <td class="hidden-xs"><img class="logo payoff" src="img/Slogan_it.png" /></td>
-                    <td><img class="logo" src="img/Logo_Marittimo.jpg" /></td>
-                    <td class="hidden-xs"><img class="logo payoff right" src="img/Slogan_fr.png"  /></td>
-                </tr>
-            </table>
-        </div>
-        <div >
-            <table>
-                <tr>
-<!--                    <td class="hidden-xs"><img class="logo" src="img/logo-arpal.png" /></td>-->
-                    <td>
-                        <h1 class="big">Acronetwork</h1>
-                        <br/>
-                        <p class="lead">Osservatorio Meteo Idrologico della Regione Liguria</p>
-                    </td>
-<!--                    <td class="hidden-xs"><img class="logo" src="img/logo-regione.svg" /></td>-->
-                </tr>
-            </table>
-        </div>
-        <div class="row loghi">
-            
-                <img class="logo g2" src="img/logo-regione.png" />
-                <img class="logo g2" src="img/logo-arpal.png" />
-            
-        </div>
 
+<div id="acronetwork" class="header">
+    <div class="container-fluid" style="padding-left: 0px; padding-right: 0px">
+
+        <div class="row text-center an_bg_homepage">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hidden-lg text-left">
+                <span class="an_title_homepage">ACRONETWORK</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <img src="img/bck_2.svg" style="max-width: 80%;" alt="" />
+            </div>
+        </div>
 
         <!-- Services -->
-        <div id="services" class="services">
+        <div id="services" class="services an_cmd_homepage">
             <div class="row">
 
-
-                <!--div class="row">
-                    <div class="col-md-4 col-md-offset-4 text-center">
-                        <h2>Servizi</h2>
-                        <hr>
-                    </div>
-                </div-->
-
-                <div class="col-md-2 col-md-offset-2 text-center">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
                     <div class="service-item">
                         <i class="service-icon fa fa-bar-chart-o" ng-click="m_oController.serviceIconClicked('/map')"></i>
-                        <h4><a ng-click="m_oController.serviceIconClicked('/map')" style="cursor: pointer">Dati</a></h4>
-                        <p>Osservazioni georiferite di parametri meteo-marini ed idrologici in tempo reale sulla Liguria</p>
+                        <h4 class="visible-lg"><a ng-click="m_oController.serviceIconClicked('/map')" style="cursor: pointer">Public</a></h4>
+                        <!--<p>Osservazioni georiferite di parametri meteo-marini ed idrologici in tempo reale sulla Liguria</p>-->
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-table" ng-click="m_oController.serviceIconClicked('/stationstable')"></i>
-                        <h4><a  ng-click="m_oController.serviceIconClicked('/stationstable')"  style="cursor: pointer">Tabelle</a></h4>
-                        <p>Elaborazione dati osservati</p>
+                        <a href="#ucon"><i class="service-icon fa fa-table"></i></a>
+                        <h4 class="visible-lg"><a  href="#ucon"  style="cursor: pointer">MYnetwork</a></h4>
+                        <!--<p>Elaborazione dati osservati</p>-->
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa omirl-sat-ground" ng-click="m_oController.serviceIconClicked('/animations')"></i>
-                        <h4><a ng-click="m_oController.serviceIconClicked('/animations')">Satellite e Radar</a></h4>
-                        <p>Mappe di precipitazione e nuvolosità elaborate da sensori remoti</p>
+                        <a href="#ucon"><i class="service-icon fa omirl-sat-ground"></i></a>
+                        <h4 class="visible-lg"><a href="#ucon" style="cursor: pointer">Admin</a></h4>
+                        <!--<p>Mappe di precipitazione e nuvolosità elaborate da sensori remoti</p>-->
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-globe" ng-click="m_oController.serviceIconClicked('/credits')"></i>
-                        <h4><a ng-click="m_oController.serviceIconClicked('/animations')">Modelli meteo-marini</a></h4>
-                        <p>Mappe di previsione dei principali parametri meteo-marini</p>
+                        <a href="#ucon"><i class="service-icon fa fa-globe"></i></a>
+                        <h4 class="visible-lg"><a href="#ucon" style="cursor: pointer">Kumalé</a></h4>
+                        <!--<p>Mappe di previsione dei principali parametri meteo-marini</p>-->
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="an_box_title_homepage visible-lg">
+            <!--<div class="row">-->
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 visible-lg"></div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 text-center">
+                ACRONETWORK<br />
+            </div>
+            <!--</div>-->
+
+        </div>
+
         <!-- /Services -->
 
-        <div class="row loghi fixed  ">
-            <table>
-                <tr>
-                    <td class="payoff right"><h6>Programma cofinanziato con il Fondo Europeo <br/> per lo Sviluppo Regionale</h6></td>
-                    <td ><img class="logo payoff"  src="img/Flag_of_Europe.svg" /></td>
-                    <td class="payoff left"><h6>Programme cofinancé <br/> par le Fonds Européen
-                        de Devél oppement Régional</h6></td>
-                </tr>
-            </table>
-        </div>
     </div>
 </div>
 
-
-
 <!-- /Intro -->
-
-
 
 <!-- Callout -->
 <!--div class="callout">
@@ -232,6 +211,9 @@
     -->
     <!-- jQuery -->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/start/jquery-ui.css">
+    <!-- Personalizzazione CSS jqueri UI -->
+    <link rel="stylesheet" href="css/jquery-ui_acronet.css">
+
     <!--script src="lib/jquery/jquery-1.10.2.js"></script-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 
@@ -348,6 +330,15 @@
         }
     }
 </script>
+
+<!-- Under construction -->
+<div id="ucon" class="header an_bg_intro_page">
+    <div class="an_box_start_intro">
+        <span class="an_title_homepage">ACRONETWORK - UNDER CONSTRUCTION</span><br /><br />
+        <a href="#acronetwork"><div class="btn btn-primary">BACK</div></a>
+    </div>
+</div>
+<!-- /Under construction -->
 
 </body>
 </html>

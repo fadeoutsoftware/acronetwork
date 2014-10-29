@@ -1,7 +1,7 @@
 <div class="map container-fluid" style="padding-left: 0px; padding-right: 0px">
 
     <div class="row">
-        <div class="map-panel col-md-10 col-xs-9" id="omirlMap" ol-map zoom="9" center="8.60,44.20"
+        <div class="map-panel col-md-10 col-xs-9" id="omirlMap" ol-map zoom="4" center="8.60,44.20"
              controls="zoom,navigation,attribution,mousePosition"></div>
         <!--<div class="map-controls-panel" >
         <!--        col-md-10 col-xs-9          -->
@@ -107,7 +107,7 @@
 
                 <!--------------------------------------------------------------------------- Stazioni --------------------------------------------------------------------------->
 
-                <accordion close-others="true">
+                <accordion close-others="true" style="color:#4e0283;">
                     <accordion-group>
                         <accordion-heading>
                             <div>
@@ -138,12 +138,12 @@
                                 </div>
                             </div>
 
-                            <div class="row">
+                            <!--<div class="row">
                                 <div class="col-md-3 col-xs-3 map-tablelink-icon" tooltip-popup-delay="500" tooltip="Filtro di ricerca stazioni">
                                     <!--<img ng-src="{{oSensor.isActive && oSensor.imageLinkOn || oSensor.imageLinkOff }}" ng-click="m_oController.sensorLinkClicked(oSensor)"/>-->
-                                    <img class="img-map-tablelink-icon" src="img/tablelink.png" ng-click="m_oController.tablesLinkClicked()"/>
+                                    <!--<img class="img-map-tablelink-icon" src="img/tablelink.png" ng-click="m_oController.tablesLinkClicked()"/>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                     </accordion-group>
 
