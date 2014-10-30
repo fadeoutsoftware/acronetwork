@@ -6,7 +6,9 @@
         <!--<div class="map-controls-panel" >
         <!--        col-md-10 col-xs-9          -->
 
-        <nav class="map-controls-panel col-md-2 col-xs-3" id="mapNavigation">
+        <!-- Manuel nax DX -->
+                <!-- Manuel nav display none -->
+        <nav class="map-controls-panel col-md-2 col-xs-3" id="mapNavigation" >
             <!--      col-xs-6 col-md-2       -->
 
             <!--<div class="map-geo-search grid row ">
@@ -37,8 +39,68 @@
                 </span>
             </div>
 
+            <!-- Manuel - Link Menu principale -->
+            <ul class="map-weather-panel" style="width: 100%;">
+                <li class="map-weather-panel-icon"><a href="#acronetwork"><span class="glyphicon glyphicon-home"></a></span></li>
+                <li><a href="#ucon"><i class="fa fa-table"></i></a></li>
+                <li><a href="#ucon"><i class="fa omirl-sat-ground"></i></a></li>
+                <li><a href="#ucon"><i class="fa fa-globe"></i></a></li>
+            </ul>
+            <br /><br />
+
+            <!-- TAB gestione lingue -->
+            <script type="application/javascript">
+                $('#myTab a').click(function (e) {
+                    e.preventDefault()
+                    $(this).tab('show')
+                })
+
+            </script>
+
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-left: 10px; padding-right: 10px;">
+                    <ul id="myTab" class="nav nav-tabs languageSel" role="tablist">
+                        <li role="presentation" class="active"><a href="#SchedaIT" role="tab" data-toggle="tab"><img src="img/it.png" alt="" /></a></li>
+                        <li role="presentation"><a href="#SchedaEN" role="tab" data-toggle="tab"><img src="img/en.png" alt="" /></a></li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div id="TablanguageSel" class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="SchedaIT">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 5px; padding: 5px;">
+                                    <a href="#linkprogettoIT" target="_blank"><img src="img/img-test-mockup/logo_progetto.png" al="" style="max-width:100%; max-height: 60px;" /></a>
+                                    <br /><br />
+                                    <div style="text-align: justify;"><span style="font-size: 12px;">Tra gli obiettivi del progetto, è incluso il rafforzamento sostenibile delle reti di monitoraggio utilizzando stazioni di misura open hardware.</span></div>
+                                    <br /><br />
+                                    <span style="font-size:12px;"><strong>Partnership</strong></span>
+                                    <div style="border-top:solid 1px #c0c0c0; height: 5px;"></div>
+                                    <img src="img/img-test-mockup/logo_partner_01.png" alt="" style="max-width: 50px; max-height: 50px;"/>
+                                    <img src="img/img-test-mockup/logo_partner_02.png" alt="" style="max-width: 50px; max-height: 50px;"/>
+                                    <img src="img/img-test-mockup/logo_partner_03.png" alt="" style="max-width: 50px; max-height: 50px;"/>
+                                </div>
+                            </div>
+                            <br />
+                            <button type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="SCHEDA"><span class="glyphicon glyphicon-list-alt"></span></button>
+                            <button type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="CONFIGURAZIONE"><span class="glyphicon glyphicon-cog"></span></button>
+                            <button type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="KIT"><i class="fa fa-archive"></i></button>
+                            <button type="button" class="an_btn_details_last" tooltip-popup-delay="500" tooltip="IMMAGINE"><span class="glyphicon glyphicon-picture"></span></button>
+                            <!--<div class="an_btn_details"></div>
+                            <div class="an_btn_details"></div>
+                            <div class="an_btn_details_last"></div>-->
+
+                            <br style="clear: left;" />
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="SchedaEN">eeeeeeeeeeeeeeeeeeeee</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--/ TAB gestione lingue -->
+
             <!--Map weather-->
-            <ul class="map-weather-panel">
+            <ul class="map-weather-panel" style="display: none;">
                 <li class="map-weather-panel-icon"
                     ng-class="{'map-firstlevel-icon-selected': m_oController.m_bIsWeatherActive}"
                     tooltip-popup-delay="500" tooltip="Situazione Attuale del Tempo">
@@ -102,7 +164,7 @@
             </ul>
             <br/>
 
-            <div id="omirl-collapsable-panels">
+            <div id="omirl-collapsable-panels" style="display: none;">
 
 
                 <!--------------------------------------------------------------------------- Stazioni --------------------------------------------------------------------------->

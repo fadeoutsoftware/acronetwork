@@ -1298,10 +1298,10 @@ var MapController = (function () {
                 iWidth -= 0;
 
                 if (!this.m_bSideBarCollapsed) {
-                    oElement[0].style.left = "-" + iWidth + "px";
+                    oElement[0].style.right = "-" + iWidth + "px";
                 }
                 else {
-                    oElement[0].style.left =  "0px";
+                    oElement[0].style.right =  "0px";
                 }
 
                 //oElement.sty

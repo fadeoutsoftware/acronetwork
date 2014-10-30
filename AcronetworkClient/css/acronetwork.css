@@ -114,6 +114,68 @@ table { margin:auto; text-align: center;}
     text-align: center;
 }
 
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus .languageSel {
+    cursor: default;
+    background-color: #f0f0f0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c7a7de #c7a7de transparent;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+}
+
+.nav-tabs .languageSel {
+    border-bottom: 1px solid #c7a7de;
+}
+
+#TablanguageSel
+{
+    border:solid 1px #c7a7de;
+    border-top:0px;
+    color: #232323;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+
+.an_btn_details
+{
+    float:left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+    border:solid 1px #c0c0c0;
+    border-right: 0px;
+    width: 92px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.an_btn_details_last
+{
+    float:left;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
+    border:solid 1px #c0c0c0;
+    border-right: solid 1px #c0c0c0;
+    width: 92px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.an_btn_details:hover, .an_btn_details_last:hover
+{
+    background-color: #602889;
+    color: #fff;
+    cursor: pointer;
+    transition:1s;
+}
+
 /* Fine - Nuove classi M. Cavallaro */
 
 .payoff {height: 50px; vertical-align: middle; }
@@ -274,7 +336,7 @@ table { margin:auto; text-align: center;}
 .side-bar-toggle {
     position: absolute;
     right:0px;
-    margin-right: -50px;
+    margin-right: 400px;
     top: 25px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -285,6 +347,18 @@ table { margin:auto; text-align: center;}
     height: AUTO;
     width:50px;
     box-shadow: 10px 0px 10px rgba(0,0,0,.2);;
+    /*position: absolute;
+    left:-50px;
+    top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3em;
+    color: white;
+    z-index: 2;
+    background: #602889;
+    height: AUTO;
+    width:50px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,.2);;*/
 
 }
 /*.side-bar-toggle i:before {*/
@@ -665,12 +739,13 @@ i.scroll:hover {
 .map-controls-panel {
     
     position: absolute;
+    right:0px;
     background: #602889;
 }
 
 .map-controls-panel {
 padding: 0 0px 0 0px;
-    min-width: 230px;
+    min-width: 400px;
     
 }
 
