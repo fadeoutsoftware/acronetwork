@@ -152,6 +152,13 @@ table { margin:auto; text-align: center;}
     width: 92px;
     font-size: 20px;
     text-align: center;
+    font-family: Co;
+}
+
+.an_btn_details_selected
+{
+    background-color: #602889;
+    color: #fff;
 }
 
 .an_btn_details_last
@@ -174,6 +181,13 @@ table { margin:auto; text-align: center;}
     color: #fff;
     cursor: pointer;
     transition:1s;
+}
+
+.an_box_dett_progetto
+{
+    width:100%;
+    border: solid 1px #c0c0c0;
+    padding: 8px;
 }
 
 /* Fine - Nuove classi M. Cavallaro */

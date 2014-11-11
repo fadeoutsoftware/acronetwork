@@ -67,6 +67,7 @@
 
                     <!-- Tab panes -->
                     <div id="TablanguageSel" class="tab-content">
+                        <!-- Scheda ITALIANO -->
                         <div role="tabpanel" class="tab-pane fade in active" id="SchedaIT">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 5px; padding: 5px;">
@@ -76,23 +77,206 @@
                                     <br /><br />
                                     <span style="font-size:12px;"><strong>Partnership</strong></span>
                                     <div style="border-top:solid 1px #c0c0c0; height: 5px;"></div>
-                                    <img src="img/img-test-mockup/logo_partner_01.png" alt="" style="max-width: 50px; max-height: 50px;"/>
-                                    <img src="img/img-test-mockup/logo_partner_02.png" alt="" style="max-width: 50px; max-height: 50px;"/>
-                                    <img src="img/img-test-mockup/logo_partner_03.png" alt="" style="max-width: 50px; max-height: 50px;"/>
+                                    <a href="#linkpartner01" target="_blank"><img src="img/img-test-mockup/logo_partner_01.png" alt="" style="max-width: 50px; max-height: 50px;"/></a>
+                                    <a href="#linkpartner02" target="_blank"><img src="img/img-test-mockup/logo_partner_02.png" alt="" style="max-width: 50px; max-height: 50px;"/></a>
+                                    <a href="#linkpartner03" target="_blank"><img src="img/img-test-mockup/logo_partner_03.png" alt="" style="max-width: 50px; max-height: 50px;"/></a>
                                 </div>
                             </div>
                             <br />
-                            <button type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="SCHEDA"><span class="glyphicon glyphicon-list-alt"></span></button>
-                            <button type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="CONFIGURAZIONE"><span class="glyphicon glyphicon-cog"></span></button>
-                            <button type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="KIT"><i class="fa fa-archive"></i></button>
-                            <button type="button" class="an_btn_details_last" tooltip-popup-delay="500" tooltip="IMMAGINE"><span class="glyphicon glyphicon-picture"></span></button>
+                            <button id="btn-scheda-it" type="button" class="an_btn_details an_btn_details_selected" tooltip-popup-delay="500" tooltip="SCHEDA"><span class="glyphicon glyphicon-list-alt"></span></button>
+                            <button id="btn-conf-it" type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="CONFIGURAZIONE"><span class="glyphicon glyphicon-cog"></span></button>
+                            <button id="btn-kit-it" type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="KIT"><i class="fa fa-archive"></i></button>
+                            <button id="btn-img-it" type="button" class="an_btn_details_last" tooltip-popup-delay="500" tooltip="IMMAGINE"><span class="glyphicon glyphicon-picture"></span></button>
+
                             <!--<div class="an_btn_details"></div>
                             <div class="an_btn_details"></div>
                             <div class="an_btn_details_last"></div>-->
 
                             <br style="clear: left;" />
+                            <br />
+
+                            <!-- Sessione scheda del progetto  -->
+                            <div id="sk_scheda_it" class="row"">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <h4>Scheda stazione</h4>
+                                    <div style="height:15px; border-top:solid 1px #c0c0c0;"></div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-info-sign"></span> Nome/ID stazione:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                             Quiliano/00011
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-globe"></span>  Rete stazione:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Quiliano Municipality
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-user"></span> Riferimento:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Dott. Nicola Bina
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-tag"></span> Variabili:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Hydrometric Level
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+                            <!-- /Sessione scheda del progetto  -->
+
+                            <!-- Sessione configurazione progetto  -->
+                            <div id="sk_conf_it" class="row" style="display: none;">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <h4>Configurazione</h4>
+                                    <div style="height:10px; border-top:solid 1px #c0c0c0;"></div>
+                                    <a href="#linkconfigurazioneIT" target="_blank"><img src="img/img-test-mockup/Configurazione.png" alt="" class="img-thumbnail img-responsive"/> </a>
+                                </div>
+                            </div>
+                            <!-- /Sessione configurazione progetto  -->
+
+                            <!-- Sessione KIT progetto  -->
+                            <div id="sk_kit_it" class="row" style="display: none;">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <h4>KIT Stazione</h4>
+                                    <div style="height:10px; border-top:solid 1px #c0c0c0;"></div>
+                                    <a href="#linkKitIT" target="_blank"><img src="img/img-test-mockup/KIT.png" alt="" class="img-thumbnail img-responsive"/> </a>
+                                </div>
+                            </div>
+                            <!-- /Sessione KIT progetto  -->
+
+                            <!-- Sessione Immagine progetto  -->
+                            <div id="sk_img_it" class="row" style="display: none;">
+                                <h4>Foto impianto</h4>
+                                <div style="height:10px; border-top:solid 1px #c0c0c0;"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <img src="img/img-test-mockup/Foto_impianto.png" alt="" class="img-thumbnail img-responsive"/>
+                                </div>
+                            </div>
+                            <!-- /Sessione Immagine progetto  -->
+
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="SchedaEN">eeeeeeeeeeeeeeeeeeeee</div>
+                        <!-- /Scheda ITALIANO -->
+
+                        <!-- Scheda inglese -->
+                        <div role="tabpanel" class="tab-pane fade" id="SchedaEN">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 5px; padding: 5px;">
+                                    <a href="#linkprogettoEN" target="_blank"><img src="img/img-test-mockup/logo_progetto.png" al="" style="max-width:100%; max-height: 60px;" /></a>
+                                    <br /><br />
+                                    <div style="text-align: justify;"><span style="font-size: 12px;">Amongst the goals of the project, the sustainable strengthening of the monitoring networks with open hardware measuring stations is included. </span></div>
+                                    <br /><br />
+                                    <span style="font-size:12px;"><strong>Partnership</strong></span>
+                                    <div style="border-top:solid 1px #c0c0c0; height: 5px;"></div>
+                                    <a href="#linkpartner01" target="_blank"><img src="img/img-test-mockup/logo_partner_01.png" alt="" style="max-width: 50px; max-height: 50px;"/></a>
+                                    <a href="#linkpartner02" target="_blank"><img src="img/img-test-mockup/logo_partner_02.png" alt="" style="max-width: 50px; max-height: 50px;"/></a>
+                                    <a href="#linkpartner03" target="_blank"><img src="img/img-test-mockup/logo_partner_03.png" alt="" style="max-width: 50px; max-height: 50px;"/></a>
+                                </div>
+                            </div>
+                            <br />
+                            <button id="btn-scheda-en" type="button" class="an_btn_details an_btn_details_selected" tooltip-popup-delay="500" tooltip="FORM"><span class="glyphicon glyphicon-list-alt"></span></button>
+                            <button id="btn-conf-en" type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="CONFIGURATION"><span class="glyphicon glyphicon-cog"></span></button>
+                            <button id="btn-kit-en" type="button" class="an_btn_details" tooltip-popup-delay="500" tooltip="KIT"><i class="fa fa-archive"></i></button>
+                            <button id="btn-img-en" type="button" class="an_btn_details_last" tooltip-popup-delay="500" tooltip="IMAGE"><span class="glyphicon glyphicon-picture"></span></button>
+
+                            <!--<div class="an_btn_details"></div>
+                            <div class="an_btn_details"></div>
+                            <div class="an_btn_details_last"></div>-->
+
+                            <br style="clear: left;" />
+                            <br />
+
+                            <!-- Sessione scheda del progetto  -->
+                            <div id="sk_scheda_en" class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <h4>Station details</h4>
+                                    <div style="height:15px; border-top:solid 1px #c0c0c0;"></div>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-info-sign"></span> Station Name/ID:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Quiliano/00011
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-globe"></span>  Station Network:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Quiliano Municipality
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-user"></span> Ref. Person:
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Dott. Nicola Bina
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <span class="glyphicon glyphicon-tag"></span> Variable(s):
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            Hydrometric Level
+                                        </div>
+                                    </div>
+                                    <br />
+                                </div>
+                            </div>
+                            <!-- /Sessione scheda del progetto  -->
+
+                            <!-- Sessione configurazione progetto  -->
+                            <div id="sk_conf_en" class="row" style="display: none;">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <h4>Configuration</h4>
+                                    <div style="height:10px; border-top:solid 1px #c0c0c0;"></div>
+                                    <a href="#linkconfigurazioneIT" target="_blank"><img src="img/img-test-mockup/Configurazione.png" alt="" class="img-thumbnail img-responsive"/> </a>
+                                </div>
+                            </div>
+                            <!-- /Sessione configurazione progetto  -->
+
+                            <!-- Sessione KIT progetto  -->
+                            <div id="sk_kit_en" class="row" style="display: none;">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <h4>KIT</h4>
+                                    <div style="height:10px; border-top:solid 1px #c0c0c0;"></div>
+                                    <a href="#linkKitIT" target="_blank"><img src="img/img-test-mockup/KIT.png" alt="" class="img-thumbnail img-responsive"/> </a>
+                                </div>
+                            </div>
+                            <!-- /Sessione KIT progetto  -->
+
+                            <!-- Sessione Immagine progetto  -->
+                            <div id="sk_img_en" class="row" style="display: none;">
+                                <h4>Installation Image</h4>
+                                <div style="height:10px; border-top:solid 1px #c0c0c0;"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 an_box_dett_progetto">
+                                    <img src="img/img-test-mockup/Foto_impianto.png" alt="" class="img-thumbnail img-responsive"/>
+                                </div>
+                            </div>
+                            <!-- /Sessione Immagine progetto  -->
+                        </div>
+                        <!-- /Scheda inglese -->
                     </div>
                 </div>
             </div>
